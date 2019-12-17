@@ -1,2 +1,2 @@
 # bullreset.css
-A CSS "bulldozer" file that force to reset, normalize and responsive all properties for all elements within an HTML page
+A CSS "bulldozer" file that resets, normalizes and makes responsive all the properties for all the elements within an HTML page
