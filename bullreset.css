@@ -1,4 +1,4 @@
-/*! bullreset.css v0.1
+/*! bullreset.css v0.2
  * 
  *  Browser support: IE8+
  *  Source: https://github.com/marcop135/bullreset.css 
@@ -36,7 +36,6 @@
 
 /* HTML, Body */
 html.bullreset,
-body.bullreset,
 .bullreset body,
 
 /* Pseudo elements */
@@ -264,7 +263,6 @@ html.bullreset {
 /* block elements ---------------------------------------------------------- */
 
 html.bullreset,
-body.bullreset,
 .bullreset body,
 .bullreset h1,
 .bullreset h2,
@@ -483,38 +481,32 @@ body.bullreset,
   word-wrap: break-word;
 }
 
-.bullreset h1,
-.bullreset .h1 {
+.bullreset h1 {
   font-size: 2em;
   margin: 0.75em 0;
 }
 
-.bullreset h2,
-.bullreset .h2 {
+.bullreset h2 {
   font-size: 1.5em;
   margin: 0.75em 0;
 }
 
-.bullreset h3,
-.bullreset .h3 {
+.bullreset h3 {
   font-size: 1.3125em;
   margin: 1em 0;
 }
 
-.bullreset h4,
-.bullreset .h4 {
+.bullreset h4 {
   font-size: 1.125em;
   margin: 1.5em 0;
 }
 
-.bullreset h5,
-.bullreset .h5 {
+.bullreset h5 {
   font-size: 1em;
   margin: 1.5em 0;
 }
 
-.bullreset h6,
-.bullreset .h6 {
+.bullreset h6 {
   font-size: 0.875em;
   margin: 1.5em 0;
 }
@@ -541,7 +533,7 @@ body.bullreset,
 
 .bullreset a:focus { 
   outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color; /* webkit */
+  outline: 5px auto -webkit-focus-ring-color;
   outline-offset: -2px;
 } 
 
@@ -611,6 +603,7 @@ body.bullreset,
 /* images and media -------------------------------------------------------- */
 
 .bullreset img,
+.bullreset svg,
 .bullreset canvas,
 .bullreset audio,
 .bullreset video,
@@ -632,6 +625,7 @@ body.bullreset,
   height: auto;
 }
 
+.bullreset svg,
 .bullreset video {
   height: auto;
 }
@@ -645,7 +639,7 @@ body.bullreset,
 }
 
 .bullreset audio {
-  width: 280px;
+  min-width: 280px;
   height: 30px;
 }
 
