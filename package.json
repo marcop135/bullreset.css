@@ -1,0 +1,22 @@
+{
+  "name": "bullreset.css",
+  "version": "0.0.2",
+  "description": "A CSS \"bulldozer\" file that resets, normalizes and makes responsive all the properties for all the elements within an HTML page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcop135/bullreset.css.git"
+  },
+  "keywords": [
+    "css"
+  ],
+  "author": "Marco Pontili",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcop135/bullreset.css/issues"
+  },
+  "homepage": "https://github.com/marcop135/bullreset.css#readme"
+}
