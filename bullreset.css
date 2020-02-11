@@ -1,9 +1,10 @@
-/*! bullreset.css v0.2
+/*! $
+ * bullreset.css v0.0.1
  * 
- *  Browser support: IE8+
- *  Source: https://github.com/marcop135/bullreset.css 
- *  MIT License
+ * GitHub: https://github.com/marcop135/bullreset.css 
+ * MIT License
  *
+ * Carefully built by @marcop135
  */
 
 
@@ -29,7 +30,6 @@
 /* global reset 
 ============================================================================ */
 
-@-webkit-viewport   { width: auto; }
 @-ms-viewport       { width: auto; }
 @-o-viewport        { width: auto; }
 @viewport           { width: auto; }
@@ -107,13 +107,8 @@ html.bullreset,
 .bullreset textarea,
 .bullreset button,
 
-/* Images and media content */
+/* Images */
 .bullreset img,
-/* to avoid
-.bullreset embed,
-.bullreset object,
-.bullreset iframe,
-*/
 
 /* HTML5 elements */
 .bullreset article,
@@ -976,7 +971,10 @@ html.bullreset,
 
 /* misc ------------------------------------------------------------------- */
 
-.bullreset [hidden],
+.bullreset [hidden] {
+  display: none !important;
+}
+
 .bullreset template {
   display: none;
 }
