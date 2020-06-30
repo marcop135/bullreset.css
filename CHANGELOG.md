@@ -1,5 +1,11 @@
 # Changes to bullreset.css
 
+## 0.0.4 (June 30, 2020)
+
+* added more information in README.md
+* added more information in index.html
+* replaced slow external embedded content in index.html
+
 ## 0.0.3 (June 30, 2020)
 
 * improved heading-level structure in index.html
