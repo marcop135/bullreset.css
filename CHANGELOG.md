@@ -1,5 +1,9 @@
 # Changes to bullreset.css
 
+## 0.0.3 (June 30, 2020)
+
+* improved heading-level structure in index.html
+
 ## 0.0.2 (June 23, 2020)
 
 * replaced most of the index.html with the [Poor Man's Styleguide](https://www.poormansstyleguide.com/)' HTML
