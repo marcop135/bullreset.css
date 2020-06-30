@@ -9,7 +9,7 @@
     >
     <title>bullreset.css CSS test page</title>
 
-    <link rel="stylesheet" href="dist/bullreset.css?v0.0.3">
+    <link rel="stylesheet" href="src/bullreset.css">
 
     <style>
       .bullreset body {
@@ -27,6 +27,22 @@
     <a href="https://github.com/marcop135/bullreset.css">GitHub</a>
     <a href="https://github.com/marcop135/bullreset.css/archive/master.zip">Download</a>
     <hr>
+
+    <pre>/* HOW TO USE IT
+ *
+ * Soft reset:
+ * 1 - Replace references to .bullreset with the name of your favourite class
+ * 2 - Append your favourite class to HTML element
+ * 3 - Write your styles safely.
+ *
+ * Hard reset:
+ * 1 - Replace references to .bullreset with the name of your favourite class
+ * 2 - Append your favourite class to HTML element
+ * 3 - Overwrite all ';' with ' !important;' and write all your CSS
+ *     using '!important' for each property.
+ *
+ */
+  </pre>
 
     <h2 id="headings">Headings</h2>
 
@@ -108,7 +124,7 @@
     <p>
       <img
         alt="Placeholder Image and Some Alt Text"
-        src="https://placehold.it/350x150"
+        src="https://placeimg.com/640/480/any"
         title="A title element for this placeholder image."
      >
     </p>
@@ -140,7 +156,7 @@
 
     <figure>
       <img
-        src="https://placehold.it/350x150"
+        src="https://placeimg.com/640/480/any"
         alt="A placeholder figure image."
      >
       <figcaption>The figcaption element example</figcaption>
@@ -319,33 +335,17 @@ for (i = 0; i &lt; divs.length; ++i) {
     <h2 id="media-elements">Media</h2>
 
     <h3>The Audio Element:</h3>
-    <audio controls>
-      <source src="https://simpl.info/audio/audio/audio.ogv" type="audio/ogg">
-      <source
-        src="https://simpl.info/audio/audio/audio.mp3"
-        type="audio/mpeg"
-     >
-      Your browser does not support the audio element.
+    <audio controls="">
+      <source src="https://media.html5media.info/audio.mp3" type="audio/mp3">
+      <source src="https://media.html5media.info/audio.ogg" type="audio/ogg">
+      <p>Your browser does not support the HTML5 Audio element.</p>
     </audio>
 
     <h3>The Video Element:</h3>
-    <video width="320" height="240" controls>
-      <source
-        src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.webm"
-        type="video/webm"
-     >
-      <source
-        src="https://www.html5rocks.com/en/tutorials/video/basics/devstories.mp4"
-        type="video/mp4"
-     >
-      <track
-        src="https://www.html5rocks.com/en/tutorials/video/basics/devstories-en.vtt"
-        label="English subtitles"
-        kind="subtitles"
-        srclang="en"
-        default
-     >
-      Your browser does not support the video tag.
+    <video poster="docs/images/video-poster.png" controls="" width="450">
+      <source src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.webm" type="video/webm">
+      <source src="https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4" type="video/mp4">
+      Sorry, your browser doesn't support embedded videos.
     </video>
 
     <h3>Embedded content:</h3>
