@@ -1,0 +1,953 @@
+/*! $
+ * bullreset.css
+ * 
+ * GitHub: https://github.com/marcop135/bullreset.css 
+ * MIT License
+ *
+ * Carefully built by @marcop135
+ */
+
+/* HOW TO USE IT
+ *
+ * Soft reset:
+ * 1 - Replace references to .bullreset with the name of your favourite class
+ * 2 - Append your favourite class to <html> element
+ * 3 - Write your styles safely.
+ *
+ * Hard reset:
+ * 1 - Replace references to .bullreset with the name of your favourite class
+ * 2 - Append your favourite class to <html> element
+ * 3 - Overwrite all ';' with ' !important;' and write all your CSS
+ *     using '!important' for each property.
+ *
+ */
+
+/* global reset 
+============================================================================ */
+
+@-ms-viewport {
+  width: auto;
+}
+@-o-viewport {
+  width: auto;
+}
+@viewport {
+  width: auto;
+}
+
+/* HTML, Body */
+html.bullreset,
+.bullreset body,
+
+/* Pseudo elements */
+.bullreset *:after,
+.bullreset *:before,
+
+/* Texts */
+.bullreset h1,
+.bullreset h2,
+.bullreset h3,
+.bullreset h4,
+.bullreset h5,
+.bullreset h6,
+.bullreset a,
+.bullreset abbr,
+.bullreset address,
+.bullreset b,
+.bullreset blockquote,
+.bullreset cite,
+.bullreset code,
+.bullreset del,
+.bullreset dfn,
+.bullreset div,
+.bullreset em,
+.bullreset hr,
+.bullreset i,
+.bullreset ins,
+.bullreset kbd,
+.bullreset p,
+.bullreset pre,
+.bullreset q,
+.bullreset s,
+.bullreset samp,
+.bullreset small,
+.bullreset span,
+.bullreset strong,
+.bullreset sub,
+.bullreset sup,
+.bullreset u,
+.bullreset var,
+
+/* Lists */
+.bullreset ul,
+.bullreset ol,
+.bullreset li,
+.bullreset dl,
+.bullreset dt,
+.bullreset dd,
+
+/* Tables */
+.bullreset table,
+.bullreset thead,
+.bullreset tbody,
+.bullreset tfoot,
+.bullreset caption,
+.bullreset tr,
+.bullreset th,
+.bullreset td,
+
+/* Forms */
+.bullreset form,
+.bullreset fieldset,
+.bullreset legend,
+.bullreset label,
+.bullreset input,
+.bullreset select,
+.bullreset optgroup,
+.bullreset option,
+.bullreset textarea,
+.bullreset button,
+
+/* Images */
+.bullreset img,
+
+/* HTML5 elements */
+.bullreset article,
+.bullreset audio,
+.bullreset aside,
+.bullreset bdi,
+.bullreset bdo,
+.bullreset canvas,
+.bullreset details,
+.bullreset figure,
+.bullreset figcaption,
+.bullreset footer,
+.bullreset header,
+.bullreset hgroup,
+.bullreset main,
+.bullreset mark,
+.bullreset menu,
+.bullreset nav,
+.bullreset section,
+.bullreset summary,
+.bullreset time,
+.bullreset video {
+  -webkit-animation: 0;
+  -moz-animation: 0;
+  -o-animation: 0;
+  animation: 0;
+  background-attachment: scroll;
+  background-color: transparent;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left top;
+  behavior: url();
+  -webkit-background-size: auto auto;
+  background-size: auto auto;
+  border: 0;
+  -webkit-border-image: none;
+  -moz-border-image: none;
+  -o-border-image: none;
+  border-image: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  bottom: auto;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  clear: none;
+  clip: auto;
+  color: #222;
+  -webkit-column-count: auto;
+  -moz-column-count: auto;
+  column-count: auto;
+  -webkit-column-gap: normal;
+  -moz-column-gap: normal;
+  column-gap: normal;
+  -webkit-column-width: auto;
+  -moz-column-width: auto;
+  column-width: auto;
+  counter-increment: none;
+  counter-reset: none;
+  cursor: auto;
+  direction: ltr;
+  display: inline;
+  float: none;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1.4;
+  font-family: Arial, sans-serif;
+  font-size: 100%;
+  font-size-adjust: none;
+  height: auto;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  hyphens: manual;
+  left: auto;
+  letter-spacing: normal;
+  list-style: none;
+  list-style-image: none;
+  list-style-type: disc;
+  margin: 0;
+  max-height: none;
+  max-width: none;
+  min-height: 0;
+  min-width: 0;
+  -moz-opacity: 1;
+  opacity: 1;
+  outline: 0;
+  outline-offset: 0;
+  overflow: visible;
+  padding: 0;
+  page: auto;
+  pointer-events: auto;
+  position: static;
+  quotes: none;
+  right: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-align: left;
+  text-decoration: none;
+  text-indent: 0;
+  text-overflow: clip;
+  text-rendering: auto;
+  text-shadow: none;
+  -webkit-transform: none;
+  -moz-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-rendering: auto;
+  text-transform: none;
+  -webkit-transition: 0;
+  -moz-transition: 0;
+  -o-transition: 0;
+  transition: 0;
+  top: auto;
+  unicode-bidi: normal;
+  vertical-align: baseline;
+  visibility: visible;
+  white-space: normal;
+  width: auto;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+}
+
+/* global normalization
+============================================================================ */
+
+html.bullreset {
+  background-color: #fff;
+}
+
+/* block elements ---------------------------------------------------------- */
+
+html.bullreset,
+.bullreset body,
+.bullreset h1,
+.bullreset h2,
+.bullreset h3,
+.bullreset h4,
+.bullreset h5,
+.bullreset h6,
+.bullreset address,
+.bullreset blockquote,
+.bullreset caption,
+.bullreset div,
+.bullreset hr,
+.bullreset p,
+.bullreset pre,
+.bullreset menu,
+.bullreset ol,
+.bullreset ul,
+.bullreset dl,
+.bullreset dt,
+.bullreset dd,
+.bullreset form,
+.bullreset fieldset,
+.bullreset option,
+.bullreset article,
+.bullreset aside,
+.bullreset details,
+.bullreset figcaption,
+.bullreset figure,
+.bullreset footer,
+.bullreset header,
+.bullreset hgroup,
+.bullreset label,
+.bullreset main,
+.bullreset nav,
+.bullreset section,
+.bullreset summary,
+.bullreset form,
+.bullreset fieldset,
+.bullreset legend {
+  display: block;
+}
+
+/* inline-block elements --------------------------------------------------- */
+
+.bullreset button,
+.bullreset input,
+.bullreset select,
+.bullreset textarea,
+.bullreset img,
+.bullreset audio,
+.bullreset canvas,
+.bullreset video {
+  display: inline-block;
+}
+
+/* normalize texts --------------------------------------------------------- */
+
+.bullreset article,
+.bullreset audio,
+.bullreset aside,
+.bullreset bdi,
+.bullreset bdo,
+.bullreset canvas,
+.bullreset details,
+.bullreset figure,
+.bullreset figcaption,
+.bullreset footer,
+.bullreset header,
+.bullreset hgroup,
+.bullreset mark,
+.bullreset menu,
+.bullreset nav,
+.bullreset section,
+.bullreset summary,
+.bullreset time,
+.bullreset video,
+.bullreset address,
+.bullreset span,
+.bullreset a,
+.bullreset del,
+.bullreset cite,
+.bullreset abbr,
+.bullreset abbr[title],
+.bullreset b,
+.bullreset strong,
+.bullreset blockquote,
+.bullreset s,
+.bullreset u,
+.bullreset var,
+.bullreset em,
+.bullreset i,
+.bullreset dfn,
+.bullreset mark,
+.bullreset ins,
+.bullreset p,
+.bullreset pre,
+.bullreset code,
+.bullreset kbd,
+.bullreset samp,
+.bullreset q,
+.bullreset small,
+.bullreset sub,
+.bullreset sup {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.bullreset abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+.bullreset b,
+.bullreset strong {
+  font-weight: bold;
+}
+
+.bullreset em,
+.bullreset i,
+.bullreset dfn,
+.bullreset cite {
+  font-style: italic;
+}
+
+.bullreset blockquote {
+  margin: 1em 0;
+  padding: 0;
+  padding-left: 1.5em;
+  border-left: 2px solid #ccc;
+}
+
+.bullreset hr {
+  height: 1px;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+}
+
+.bullreset mark {
+  background: #ff0; /* strong yellow */
+  color: #000;
+  font-weight: bold;
+}
+
+.bullreset ins {
+  background-color: #ff9; /* soft yellow */
+  color: #000;
+}
+
+.bullreset code,
+.bullreset kbd,
+.bullreset pre,
+.bullreset samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.bullreset p,
+.bullreset pre {
+  margin: 1em 0;
+}
+
+.bullreset pre,
+.bullreset code {
+  word-break: break-all;
+  word-wrap: break-word; /* webkit */
+  white-space: pre;
+  white-space: -moz-pre-wrap; /* fennec */
+  white-space: pre-wrap;
+  white-space: pre \9; /* IE7+ */
+}
+
+.bullreset q {
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+.bullreset small {
+  font-size: 85%;
+}
+
+.bullreset sub,
+.bullreset sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+.bullreset sup {
+  top: -0.5em;
+}
+
+.bullreset sub {
+  bottom: -0.25em;
+}
+
+/* headings ---------------------------------------------------------------- */
+
+.bullreset h1,
+.bullreset h2,
+.bullreset h3,
+.bullreset h4,
+.bullreset h5,
+.bullreset h6 {
+  color: inherit;
+  font-family: inherit;
+  background: inherit;
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+.bullreset h1 {
+  font-size: 2em;
+  margin: 0.75em 0;
+}
+
+.bullreset h2 {
+  font-size: 1.5em;
+  margin: 0.75em 0;
+}
+
+.bullreset h3 {
+  font-size: 1.3125em;
+  margin: 1em 0;
+}
+
+.bullreset h4 {
+  font-size: 1.125em;
+  margin: 1.5em 0;
+}
+
+.bullreset h5 {
+  font-size: 1em;
+  margin: 1.5em 0;
+}
+
+.bullreset h6 {
+  font-size: 0.875em;
+  margin: 1.5em 0;
+}
+
+/* links ------------------------------------------------------------------- */
+
+.bullreset a {
+  color: #428bca; /* bootstrap blue */
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.bullreset a:hover,
+.bullreset a:focus {
+  text-decoration: underline;
+  color: #2a6496;
+}
+
+.bullreset a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+/* lists ------------------------------------------------------------------- */
+
+.bullreset menu,
+.bullreset ol,
+.bullreset ul,
+.bullreset dl {
+  margin: 1.5em 0;
+}
+
+.bullreset menu ul,
+.bullreset menu ol,
+.bullreset ul ul,
+.bullreset ul ol,
+.bullreset ol ol,
+.bullreset ol ul,
+.bullreset dd {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.bullreset ol,
+.bullreset ul {
+  margin-left: 1.5em;
+}
+
+.bullreset li {
+  list-style-type: disc;
+  display: list-item;
+}
+
+.bullreset ol li {
+  list-style-type: decimal;
+}
+
+.bullreset nav ol,
+.bullreset nav ul,
+.bullreset nav li {
+  margin-left: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+.bullreset menu,
+.bullreset ul,
+.bullreset ol,
+.bullreset li,
+.bullreset dl,
+.bullreset dt {
+  color: inherit;
+  font-family: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  background-color: inherit;
+}
+
+.bullreset dt {
+  font-weight: bold;
+}
+
+/* images and media -------------------------------------------------------- */
+
+.bullreset img,
+.bullreset svg,
+.bullreset canvas,
+.bullreset audio,
+.bullreset video,
+.bullreset iframe,
+.bullreset object,
+.bullreset embed {
+  max-width: 100%;
+}
+
+.bullreset img,
+.bullreset audio,
+.bullreset video {
+  vertical-align: middle;
+}
+
+.bullreset img {
+  border: 0;
+  width: auto;
+  height: auto;
+}
+
+.bullreset svg,
+.bullreset video {
+  height: auto;
+}
+
+.bullreset svg:not(:root) {
+  overflow: hidden;
+}
+
+.bullreset figure {
+  margin: 0;
+}
+
+.bullreset audio {
+  min-width: 280px;
+  height: 30px;
+}
+
+.bullreset audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* forms ------------------------------------------------------------------- */
+
+.bullreset form,
+.bullreset fieldset,
+.bullreset legend,
+.bullreset label,
+.bullreset button,
+.bullreset input,
+.bullreset select,
+.bullreset optgroup,
+.bullreset textarea {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.bullreset legend {
+  display: table \9; /* enable line-wrapping in IE8+ */
+  width: 100%;
+  white-space: normal; /* enable line-wrapping in FF4/5 */
+  font-weight: normal;
+}
+
+.bullreset label {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.bullreset label input,
+.bullreset label select,
+.bullreset label textarea {
+  font-weight: normal;
+}
+
+.bullreset input,
+.bullreset select,
+.bullreset textarea {
+  line-height: normal;
+  vertical-align: baseline;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+
+.bullreset input,
+.bullreset select,
+.bullreset textarea,
+.bullreset button,
+.bullreset input[type="button"],
+.bullreset input[type="reset"],
+.bullreset input[type="submit"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.bullreset input,
+.bullreset select,
+.bullreset textarea,
+.bullreset input[type="file"] {
+  width: 100%;
+}
+
+.bullreset input[type="image"],
+.bullreset input[type="submit"],
+.bullreset input[type="reset"],
+.bullreset input[type="button"],
+.bullreset input[type="radio"],
+.bullreset input[type="checkbox"] {
+  width: auto;
+}
+
+.bullreset button,
+.bullreset html input[type="button"],
+.bullreset input[type="reset"],
+.bullreset input[type="submit"],
+.bullreset input[type="email"],
+.bullreset input[type="text"],
+.bullreset input[type="tel"],
+.bullreset input[type^="date"],
+.bullreset input[type="month"],
+.bullreset input[type="week"],
+.bullreset input[type="url"],
+.bullreset input[type="image"],
+.bullreset input[type="password"],
+.bullreset input[type="search"],
+.bullreset input[type="search"]::-webkit-search-decoration,
+.bullreset input[type="search"]::-webkit-search-cancel-button,
+.bullreset select,
+.bullreset textarea {
+  -webkit-appearance: none;
+}
+
+.bullreset input[type="email"],
+.bullreset input[type="number"],
+.bullreset input[type="password"],
+.bullreset input[type="tel"],
+.bullreset input[type="search"],
+.bullreset input[type="text"],
+.bullreset input[type^="date"],
+.bullreset input[type="month"],
+.bullreset input[type="time"],
+.bullreset input[type="week"],
+.bullreset input[type="time"],
+.bullreset input[type="url"],
+.bullreset select,
+.bullreset textarea {
+  padding: 0.5em;
+}
+
+.bullreset input[type="email"],
+.bullreset input[type="number"],
+.bullreset input[type="password"],
+.bullreset input[type="tel"],
+.bullreset input[type="search"],
+.bullreset input[type="text"],
+.bullreset input[type^="date"],
+.bullreset input[type="month"],
+.bullreset input[type="time"],
+.bullreset input[type="week"],
+.bullreset input[type="time"],
+.bullreset input[type="url"],
+.bullreset select,
+.bullreset textarea {
+  background-color: #fff;
+  border: 1px solid #b2b2b2;
+}
+
+.bullreset input[type="color"] {
+  height: 23px;
+}
+
+.bullreset select {
+  text-transform: none;
+  background-color: #fff;
+}
+
+.bullreset select[size],
+.bullreset select[multiple] {
+  height: auto;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .bullreset select,
+  .bullreset select[size="0"],
+  .bullreset select[size="1"] {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAARCAYAAABASYU2AAAAbElEQVR42u2SQQrAMAgE9y1u/P8TWyyFXgpe1uwlA8GLEdkRa60rM2Wv5kFNDSYpWTAinooJlEliEpJzmv3av3/YwZBmf5rVj9289+XW3CPQ7NLea3Zp7zT7EWg2aG9SdGvvFvQj1jyfJg7/3HajEiSxv0LJAAAAAElFTkSuQmCC);
+    /* @2x image
+    -webkit-background-size: 41px 17px;
+    background-size: 41px 17px; */
+    -webkit-background-size: 1.28125em 0.53125em;
+    background-size: 1.28125em 0.53125em;
+
+    background-repeat: no-repeat;
+    background-position: right center;
+
+    padding-right: 2em;
+  }
+
+  .bullreset select[size],
+  .bullreset select[multiple] {
+    background-image: none;
+    -webkit-background-size: auto auto;
+    background-size: auto auto;
+    background-position: left top;
+
+    padding-right: 0.5em;
+  }
+}
+
+.bullreset input[type="checkbox"],
+.bullreset input[type="radio"] {
+  border: 0 \9; /* IE7+ */
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .bullreset input[type="radio"],
+  .bullreset input[type="checkbox"] {
+    border: 1px solid #333;
+  }
+}
+
+.bullreset input[type="radio"] {
+  -webkit-border-radius: 13px;
+  -moz-border-radius: 13px;
+  border-radius: 13px;
+}
+
+.bullreset input[type="number"]::-webkit-inner-spin-button,
+.bullreset input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+.bullreset textarea {
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+}
+
+.bullreset optgroup::-moz-focus-inner,
+.bullreset button::-moz-focus-inner,
+.bullreset input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.bullreset button,
+.bullreset input[type="button"],
+.bullreset input[type="reset"],
+.bullreset input[type="submit"] {
+  -webkit-appearance: button;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-transform: none;
+  display: inline-block;
+  line-height: normal;
+  text-align: center;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  background-clip: padding-box;
+  vertical-align: baseline;
+  background-image: none; /* normalize fennec */
+  border: 1px solid #b2b2b2;
+  background: #f4f4f4;
+}
+
+.bullreset button:hover,
+.bullreset input[type="button"]:hover,
+.bullreset input[type="reset"]:hover,
+.bullreset input[type="submit"]:hover,
+.bullreset button:focus,
+.bullreset input[type="button"]:focus,
+.bullreset input[type="reset"]:focus,
+.bullreset input[type="submit"]:focus {
+  outline: 0 none;
+  text-decoration: none;
+  border-color: #999;
+  background: #e5e5e5;
+}
+
+/* disable groups */
+.bullreset button[disabled],
+.bullreset input[disabled],
+.bullreset select[disabled],
+.bullreset textarea[disabled] {
+  cursor: default !important;
+  background: #f9f9f9 none !important; /* very light grey */
+  border-color: #dbdbdb !important;
+  color: #b2b2b2 !important;
+  opacity: 1 !important;
+}
+
+/* tables ------------------------------------------------------------------ */
+
+.bullreset table,
+.bullreset caption,
+.bullreset thead,
+.bullreset tbody,
+.bullreset tfoot,
+.bullreset tr,
+.bullreset th,
+.bullreset td {
+  background-color: inherit;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+}
+
+.bullreset table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  display: table;
+  table-layout: auto;
+}
+
+.bullreset caption {
+  display: table-caption;
+}
+
+.bullreset thead {
+  display: table-header-group;
+}
+
+.bullreset tbody {
+  display: table-row-group;
+}
+
+.bullreset tfoot {
+  display: table-footer-group;
+}
+
+.bullreset tr {
+  display: table-row;
+}
+
+.bullreset th,
+.bullreset td {
+  display: table-cell;
+}
+
+.bullreset th {
+  font-weight: bold;
+  vertical-align: bottom;
+}
+
+.bullreset th,
+.bullreset caption {
+  text-align: left;
+}
+
+/* misc ------------------------------------------------------------------- */
+
+.bullreset [hidden] {
+  display: none !important;
+}
+
+.bullreset template {
+  display: none;
+}
+
+.bullreset [dir="rtl"] {
+  direction: rtl;
+}
