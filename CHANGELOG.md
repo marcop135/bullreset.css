@@ -1,5 +1,9 @@
 # Changes to bullreset.css
 
+## 0.0.5 (November 17, 2020)
+
+* normalize webkit datetime inputs
+
 ## 0.0.4 (June 30, 2020)
 
 * added more information in README.md
