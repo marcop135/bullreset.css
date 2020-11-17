@@ -878,6 +878,17 @@ html.bullreset,
   opacity: 1 !important;
 }
 
+
+.bullreset ::-webkit-datetime-edit-fields-wrapper,
+.bullreset ::-webkit-datetime-edit-text,
+.bullreset ::-webkit-datetime-edit-minute,
+.bullreset ::-webkit-datetime-edit-hour-field,
+.bullreset ::-webkit-datetime-edit-day-field,
+.bullreset ::-webkit-datetime-edit-month-field,
+.bullreset ::-webkit-datetime-edit-year-field {
+  padding: 0;
+}
+
 /* tables ------------------------------------------------------------------ */
 
 .bullreset table,
